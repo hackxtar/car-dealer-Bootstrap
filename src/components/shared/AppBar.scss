@@ -1,0 +1,33 @@
+.navbar {
+  background: #e5e6e620 !important;
+  z-index: 1;
+
+  .navbar-logo {
+    font-size: 30px !important;
+    & b {
+      color: #ed563b !important;
+      background-color: white;
+      padding: 10px;
+      margin: 0 !important;
+    }
+    & span {
+      background: #ed563b !important;
+      color: white;
+      font-weight: 700;
+      padding: 10px;
+      margin: 0 !important;
+    }
+  }
+  .navbar-menu {
+    font-size: 18px !important;
+    font-weight: 400;
+
+    & a {
+      color: #fff !important;
+    }
+
+    & a:hover {
+      color: #ed563b !important;
+    }
+  }
+}

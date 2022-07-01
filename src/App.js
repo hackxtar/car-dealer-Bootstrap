@@ -1,12 +1,11 @@
-import "./App.css";
-import { Navbar } from "./components/shared/Navbar";
-import { Home } from "./components/home/Home";
-import "./assets/css/main.css";
+import AppBar from "./components/shared/AppBar";
+import Home from "./components/home/Home";
+import "./App.scss";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <AppBar />
       <Home />
     </>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import "./AppBar.scss";
 
 const AppBar = () => {
@@ -10,7 +9,7 @@ const AppBar = () => {
           <div class="col-12">
             <nav class="main-nav">
               <a href="index.html" class="logo">
-                Car Dealer<em> Website</em>
+                Car <em>Dealer</em>
               </a>
               <ul class="nav">
                 <li>
@@ -25,7 +24,7 @@ const AppBar = () => {
                   <a
                     class="dropdown-toggle"
                     data-toggle="dropdown"
-                    href="#"
+                    href="/#"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"

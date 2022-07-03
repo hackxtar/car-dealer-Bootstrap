@@ -49,6 +49,15 @@
       padding: 0;
       margin: 0;
       list-style: none;
+      & a {
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      & .active {
+        color: #ed563b;
+      }
     }
   }
 }

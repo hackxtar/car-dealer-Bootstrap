@@ -1,29 +1,19 @@
-/**
- * @format
- */
 import React from "react";
-import video from "../../assets/images/video.mp4";
-import { Container, Row } from "react-bootstrap/";
+import { Container, Row, Badge, Col, Card, Button } from "react-bootstrap";
+
 import "./Home.scss";
 
 const Header = () => {
   return (
-    <div className="home">
-      <div id="intro" className="bg-image shadow-2-strong">
-        <video autoPlay muted loop>
-          <source src={video} type="video/mp4" />
-        </video>
-        <div className="mask">
-          <div className="container d-flex align-items-center justify-content-center text-center h-100">
-            <div className="caption">
-              <h6>Lorem ipsum dolor sit amet</h6>
-              <h2>
-                Best <em>car dealer</em> in town!
-              </h2>
-              <div className="main-button">
-                <a href="contact.html">Contact Us</a>
-              </div>
-            </div>
+    <div className="main-banner">
+      <div className="overlay header-text">
+        <div>
+          <h6>Lorem ipsum dolor sit amet</h6>
+          <h2>
+            Best <em>car dealer</em> in town!
+          </h2>
+          <div className="main-button">
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
       </div>
@@ -33,35 +23,46 @@ const Header = () => {
 
 const FeaturedCars = () => {
   return (
-    <section className="section" id="trainers">
+    <Container className="text-center my-6">
       <Row>
-        <div className="col-lg-6 offset-lg-3">
-          <div className="section-heading">
-            <h2>
-              Featured <em>Cars</em>
-            </h2>
-            <img src="assets/images/line-dec.png" alt="" />
-            <p>
-              Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed
-              viverra ipsum dolor, ultricies fermentum massa consequat eu.
-            </p>
-          </div>
-        </div>
+        <h1>
+          Featured Cars <Badge className="bg-primary">New</Badge>
+        </h1>
       </Row>
-    </section>
+      <Row className="my-5 justify-content-center">
+        {[1, 2, 3, 4, 5, 6].map((e) => (
+          <FeaturedCarsSingle />
+        ))}
+      </Row>
+    </Container>
+  );
+};
+
+const FeaturedCarsSingle = () => {
+  return (
+    <Card style={{ width: "20rem" }} className="m-4">
+      <Card.Img
+        variant="top"
+        src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80/100px180"
+      />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button className="bg-primary">View</Button>
+      </Card.Body>
+    </Card>
   );
 };
 
 const Home = () => {
   return (
-    <>
-      <Container>
-        <Header />
-      </Container>
-      <Container>
-        <FeaturedCars />
-      </Container>
-    </>
+    <Container fluid className="px-0">
+      <Header />
+      <FeaturedCars />
+    </Container>
   );
 };
 

@@ -42,3 +42,47 @@
     }
   }
 }
+
+.trainer-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  padding: 15px;
+  margin-bottom: 30px;
+
+  & img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  & span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ed563b;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  & h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+  }
+  & p {
+    margin-bottom: 20px;
+  }
+  & .down-content {
+    text-align: left;
+    text-decoration: none;
+    & ul.social-icons li a {
+      color: #ffffff;
+      font-weight: 600;
+      transition: all 0.3s;
+      background-color: #ed563b;
+      padding: 10px;
+    }
+  }
+}

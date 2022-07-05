@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Badge, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Badge, Col } from "react-bootstrap";
 
 import "./Home.scss";
 
@@ -75,11 +75,37 @@ const FeaturedCarsSingle = () => {
   );
 };
 
+const ReadAboutUs = () => {
+  return (
+    <div className="text-white mx-21">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+      dolorum repellat ipsa, iure laudantium perspiciatis libero repudiandae
+      vero quisquam nulla itaque odit recusandae asperiores debitis tenetur.
+      Accusantium optio quibusdam laborum asperiores inventore qui quos ducimus
+      vel fugiat placeat vero adipisci, neque expedita ullam in! Veniam
+      cupiditate deleniti provident praesentium aut!
+    </div>
+  );
+};
 const Home = () => {
   return (
     <Container fluid className="px-0">
       <Header />
       <FeaturedCars />
+
+      <section className="section section-bg">
+        <Container fluid className="pos-r up-10 text-center px-0">
+          <div className="py-6 up-1">
+            <h1 className="text-white">
+              READ <Badge className="bg-primary">ABOUT US</Badge>
+            </h1>
+
+            <div className="mt-5 justify-content-center">
+              <ReadAboutUs />
+            </div>
+          </div>
+        </Container>
+      </section>
     </Container>
   );
 };

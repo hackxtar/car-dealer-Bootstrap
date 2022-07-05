@@ -1,12 +1,80 @@
+/**
+*@format
+*/
+
+$indexes: (
+  1: 1,
+  10: 10,
+  100: 100,
+  500: 500,
+  1000: 1000,
+);
+
+$positions: (
+  r: relative,
+  a: absolute,
+  f: fixed,
+  init: initial,
+  i: inherit,
+  rev: reverse,
+  stat: static,
+  s: sticky,
+  u: unset,
+);
+
+$sizes: (
+  6: 5rem,
+  7: 6rem,
+  8: 7rem,
+  9: 8rem,
+  10: 9rem,
+  11: 10rem,
+  12: 11rem,
+  13: 12rem,
+
+  21: 20rem,
+);
+
+@each $indexName, $index in $indexes {
+  .up-#{$indexName} {
+    z-index: $index;
+  }
+}
+@each $positionName, $position in $positions {
+  .pos-#{$positionName} {
+    position: $position;
+  }
+}
+
+@each $sizeValue, $size in $sizes {
+  .my-#{$sizeValue} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+}
+
+@each $sizeValue, $size in $sizes {
+  .py-#{$sizeValue} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+}
+
+@each $sizeValue, $size in $sizes {
+  .mx-#{$sizeValue} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+@each $sizeValue, $size in $sizes {
+  .px-#{$sizeValue} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+
 .bg-primary {
   background: #ed563b !important;
-}
-.mt-6 {
-  margin-top: 5rem;
-}
-.my-6 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .list-style-none {
@@ -79,4 +147,13 @@ figcaption {
 a:hover {
   color: #ed563b !important;
   background: #fff !important;
+}
+
+.div {
+  text-align: center;
+}
+
+::selection {
+  background: #ed563b;
+  color: #fff;
 }

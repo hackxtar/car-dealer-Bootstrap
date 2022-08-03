@@ -41,14 +41,14 @@ const FeaturedCars = () => {
 const FeaturedCarsSingle = () => {
   return (
     <Col className="lg-4">
-      <div class="trainer-item">
-        <div class="image-thumb">
+      <div className="trainer-item">
+        <div className="image-thumb">
           <img
             src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80/100px180"
             alt=""
           />
         </div>
-        <div class="down-content">
+        <div className="down-content">
           <span>
             <del>
               <sup>$</sup>11999
@@ -59,12 +59,12 @@ const FeaturedCarsSingle = () => {
           <h4>Lorem ipsum dolor sit amet, consectetur</h4>
 
           <p>
-            <i class="fa fa-dashboard"></i> 130 000km &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
+            <i className="fa fa-dashboard"></i> 130 000km &nbsp;&nbsp;&nbsp;
+            <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
+            <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
           </p>
 
-          <ul class="social-icons list-style-none">
+          <ul className="social-icons list-style-none">
             <li>
               <a href="car-details.html">+ View Car</a>
             </li>

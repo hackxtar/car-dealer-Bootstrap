@@ -1,6 +1,7 @@
 /**
 *@format
 */
+@import "./assets/style/constants.scss";
 
 $indexes: (
   1: 1,
@@ -74,7 +75,7 @@ $sizes: (
 }
 
 .bg-primary {
-  background: #ed563b !important;
+  background: $accent-color !important;
 }
 
 .list-style-none {
@@ -145,8 +146,8 @@ figcaption {
 }
 
 a:hover {
-  color: #ed563b !important;
-  background: #fff !important;
+  color: $accent-color !important;
+  background: $white !important;
 }
 
 .div {
@@ -154,6 +155,10 @@ a:hover {
 }
 
 ::selection {
-  background: #ed563b;
-  color: #fff;
+  background: $accent-color;
+  color: $white;
+}
+
+h1 {
+  color: $white;
 }

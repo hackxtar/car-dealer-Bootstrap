@@ -3,26 +3,26 @@ import "./AppBar.scss";
 
 const AppBar = () => {
   return (
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <a href="index.html" class="logo">
+    <header className="header-area header-sticky">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <nav className="main-nav">
+              <a href="index.html" className="logo">
                 Car <em>Dealer</em>
               </a>
-              <ul class="nav">
+              <ul className="nav">
                 <li>
-                  <a href="index.html" class="active">
+                  <a href="index.html" className="active">
                     Home
                   </a>
                 </li>
                 <li>
                   <a href="cars.html">Cars</a>
                 </li>
-                <li class="dropdown">
+                <li className="dropdown">
                   <a
-                    class="dropdown-toggle"
+                    className="dropdown-toggle"
                     data-toggle="dropdown"
                     href="/#"
                     role="button"
@@ -32,23 +32,23 @@ const AppBar = () => {
                     About
                   </a>
 
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="about.html">
+                  <div className="dropdown-menu">
+                    <a className="dropdown-item" href="about.html">
                       About Us
                     </a>
-                    <a class="dropdown-item" href="blog.html">
+                    <a className="dropdown-item" href="blog.html">
                       Blog
                     </a>
-                    <a class="dropdown-item" href="team.html">
+                    <a className="dropdown-item" href="team.html">
                       Team
                     </a>
-                    <a class="dropdown-item" href="testimonials.html">
+                    <a className="dropdown-item" href="testimonials.html">
                       Testimonials
                     </a>
-                    <a class="dropdown-item" href="faq.html">
+                    <a className="dropdown-item" href="faq.html">
                       FAQ
                     </a>
-                    <a class="dropdown-item" href="terms.html">
+                    <a className="dropdown-item" href="terms.html">
                       Terms
                     </a>
                   </div>
